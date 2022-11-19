@@ -1,0 +1,20 @@
+{
+  "name": "findip",
+  "version": "1.0.0",
+  "description": "A CLI tool to trace routes with exact location",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishek-cyber839/Find-Ip.git"
+  },
+  "author": "Abhishek Abhishek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhishek-cyber839/Find-Ip/issues"
+  },
+  "homepage": "https://github.com/Abhishek-cyber839/Find-Ip#readme",
+  "bin": "src/index.js"
+}
