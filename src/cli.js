@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 import {displayInfo} from "../utils/display-info.js";
+import parseArgumentsIntoOptions from "../utils/parse-args.js"
+import promptForMissingOptions from "../utils/prompt-questions.js";
 import Traceroute from "nodejs-traceroute";
 
 const ls = (destination) => {
@@ -43,6 +45,8 @@ const ls = (destination) => {
   }
 };
 
-ls(process.argv.slice(2));
-
-displayInfo(process.argv.slice(2));
+const options = parseArgumentsIntoOptions(process.argv)
+console.log(options)
+const anwsers = await promptForMissingOptions(options)
+console.log(anwsers)
+//  displayInfo(process.argv.slice(2));
